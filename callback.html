@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="TikTok authorization callback page for DarkMatterDaily Publisher."
+    >
+    <title>TikTok Authorization Complete | DarkMatterDaily Publisher</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="DarkMatterDaily home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>DarkMatterDaily</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </header>
+
+    <main class="legal-page">
+      <section class="legal-hero">
+        <p class="eyebrow">DarkMatterDaily Publisher</p>
+        <h1>TikTok Authorization Complete</h1>
+        <p class="lead">
+          TikTok redirected you back to DarkMatterDaily Publisher after the
+          authorization step. This page is provided for OAuth callback testing and
+          does not expose, exchange, or store access tokens.
+        </p>
+      </section>
+
+      <section class="legal-content" aria-labelledby="callback-details">
+        <h2 id="callback-details">Callback Parameters</h2>
+        <p>
+          The following values are read from the current URL query string and shown
+          safely as plain text for testing.
+        </p>
+
+        <dl class="parameter-list">
+          <div>
+            <dt>code</dt>
+            <dd id="param-code">Not provided</dd>
+          </div>
+          <div>
+            <dt>state</dt>
+            <dd id="param-state">Not provided</dd>
+          </div>
+          <div>
+            <dt>error</dt>
+            <dd id="param-error">Not provided</dd>
+          </div>
+          <div>
+            <dt>error_description</dt>
+            <dd id="param-error-description">Not provided</dd>
+          </div>
+        </dl>
+
+        <h2>Token Handling</h2>
+        <p>
+          This static callback page does not request, receive, store, or display
+          TikTok access tokens. Any token exchange should be performed only by an
+          authorized server-side component.
+        </p>
+
+        <div class="hero-actions legal-actions">
+          <a class="button primary" href="index.html">Home</a>
+          <a class="button secondary" href="privacy.html">Privacy Policy</a>
+          <a class="button secondary" href="terms.html">Terms of Service</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 DarkMatterDaily. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </footer>
+
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const fields = [
+          ["code", "param-code"],
+          ["state", "param-state"],
+          ["error", "param-error"],
+          ["error_description", "param-error-description"]
+        ];
+
+        fields.forEach(function ([name, elementId]) {
+          const element = document.getElementById(elementId);
+          const value = params.get(name);
+          element.textContent = value && value.trim() ? value : "Not provided";
+        });
+      })();
+    </script>
+  </body>
+</html>
