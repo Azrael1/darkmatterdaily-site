@@ -46,6 +46,7 @@
           <li>TikTok account identifiers needed to recognize the authorized account.</li>
           <li>Access tokens and related authorization data required to perform approved uploads.</li>
           <li>Uploaded video metadata, such as captions, titles, descriptions, tags, timestamps, and platform status.</li>
+          <li>Direct Post settings, such as selected privacy level, comment, duet, stitch, commercial-content, and AI-generated content disclosures.</li>
           <li>Publishing status, including upload progress, success, failure, platform responses, and retry state.</li>
           <li>Technical logs used for troubleshooting, security, reliability, and audit history.</li>
         </ul>
@@ -64,6 +65,11 @@
           diagnose failures, maintain audit records, and improve operational
           reliability.
         </p>
+        <p>
+          Before a TikTok Direct Post, the app queries TikTok for the current creator
+          information so the available privacy and interaction settings can be shown
+          to the user before confirmation.
+        </p>
 
         <h2>Data Retention and Deletion</h2>
         <p>
@@ -81,6 +87,13 @@
           contacting us. After access is revoked, DarkMatterDaily Publisher will no
           longer be able to use the revoked authorization to upload or manage videos
           for that TikTok account.
+        </p>
+        <p>
+          When a TikTok connection is disconnected in the app, the stored
+          authorization is marked inactive and is no longer used for upload, draft, or
+          Direct Post actions. You may also request deletion of stored account
+          identifiers, publishing metadata, generated media, and technical logs by
+          emailing the contact address below.
         </p>
 
         <h2>Security</h2>
