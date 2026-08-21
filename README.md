@@ -2,6 +2,8 @@
 
 Public static website for DarkMatterDaily Publisher, ready for GitHub Pages.
 
+Public URL: `https://darkmatterdailypublisher.github.io/`
+
 ## Files
 
 - `index.html` - public landing page for DarkMatterDaily and DarkMatterDaily Publisher.
@@ -12,9 +14,12 @@ Public static website for DarkMatterDaily Publisher, ready for GitHub Pages.
 
 ## GitHub Pages
 
-1. Push this folder to a GitHub repository.
-2. In the repository settings, enable GitHub Pages.
-3. Select the branch and folder that contain these static files.
+This site is published from the `main` branch and repository root.
+
+- Home: `https://darkmatterdailypublisher.github.io/`
+- Privacy Policy: `https://darkmatterdailypublisher.github.io/privacy.html`
+- Terms of Service: `https://darkmatterdailypublisher.github.io/terms.html`
+- TikTok OAuth callback: `https://darkmatterdailypublisher.github.io/callback.html`
 
 ## Contact Email
 
